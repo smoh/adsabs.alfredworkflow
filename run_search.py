@@ -98,7 +98,7 @@ if __name__ == "__main__":
         q=query_string,
         sort=sort,
         fl=["title", "author", "year", "pubdate", "bibcode"],
-        max_pages=1, rows=5)
+        max_pages=1, rows=10)
 
     papers = [dict(
         title="Execute query on the ADS website",
