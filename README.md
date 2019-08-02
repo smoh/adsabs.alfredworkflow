@@ -1,3 +1,8 @@
+Notes on smoh branch
+
+- adds C-Enter alternative action to copy and autopaste bibtex entry.
+
+
 # An Alfred Workflow to search SAO/NASA ADS
 
 With the deprecation of the classic SAO/NASA Astrophysics Data System (ADS) search interface,
