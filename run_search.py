@@ -90,6 +90,9 @@ if __name__ == "__main__":
             return_error("Your ADS rate limit has been reached",
                          "https://github.com/andycasey/ads")
 
+    # Wait for it...
+    time.sleep(0.8)
+
     # Perform the search
     sort = "citation_count+desc"
     if "year:" in query_string:
@@ -100,16 +103,12 @@ if __name__ == "__main__":
         fl=["title", "author", "year", "pubdate", "bibcode"],
         max_pages=1, rows=10)
 
-    papers = [dict(
-        title="Execute query on the ADS website",
-        subtitle=query_string,
-        arg="https://ui.adsabs.harvard.edu/search/q="+query_string,
-    )]
+    papers = []
     for paper in request:
         papers.append(dict(
             title="{0} ({1})".format(paper.title[0], paper.year),
             subtitle=", ".join(paper.author),
-            arg=URL_FORMAT(paper.bibcode),
+            arg=paper.bibcode,
         ))
 
     # Save the rate limit

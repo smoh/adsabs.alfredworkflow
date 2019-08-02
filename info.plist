@@ -8,73 +8,24 @@
 	<string>Internet</string>
 	<key>connections</key>
 	<dict>
-		<key>2469E046-0CF8-40FC-BD78-A8449D453634</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>427E975F-DF39-4AE1-8C3C-EDE1B694FDCE</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>95CBCB6A-2883-442D-8A36-76B0E44B7219</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>427E975F-DF39-4AE1-8C3C-EDE1B694FDCE</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>5532B5BB-86D1-4826-BAB2-1D0AB757D978</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>5532B5BB-86D1-4826-BAB2-1D0AB757D978</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>BB651561-1A0A-42DB-8B5C-A41D5ADA51B6</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>95CBCB6A-2883-442D-8A36-76B0E44B7219</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>DAFF399E-22B6-4655-BD72-BD3870F30A91</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>BB651561-1A0A-42DB-8B5C-A41D5ADA51B6</key>
+		<key>88F638D8-273F-4E10-979E-6CFBCBC1AD83</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>11D5721D-E45C-4D45-82C8-2CC370002271</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C9FE6312-3EF6-402F-813D-D055F7F2586E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9CDCC2C0-8415-4195-966C-8CB12FCD0CFA</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -87,7 +38,17 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>11D5721D-E45C-4D45-82C8-2CC370002271</string>
+				<string>C9FE6312-3EF6-402F-813D-D055F7F2586E</string>
+				<key>modifiers</key>
+				<integer>262144</integer>
+				<key>modifiersubtext</key>
+				<string>Copy paste bibtex for the paper</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>407E7C1B-5537-436F-8D97-71204E3433D3</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -110,40 +71,47 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
+				<key>alfredfiltersresults</key>
 				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
 				<key>escaping</key>
 				<integer>110</integer>
+				<key>keyword</key>
+				<string>ads</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Searching for papers...</string>
 				<key>script</key>
 				<string>$ADS_PYTHON parse_query.py {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Execute search on ADS website</string>
 				<key>type</key>
 				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>BB651561-1A0A-42DB-8B5C-A41D5ADA51B6</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>matchstring</key>
-				<string>__ads__ </string>
-				<key>replacestring</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
-			<key>uid</key>
-			<string>5532B5BB-86D1-4826-BAB2-1D0AB757D978</string>
+			<string>88F638D8-273F-4E10-979E-6CFBCBC1AD83</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -169,105 +137,42 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>inputstring</key>
-				<string></string>
-				<key>matchcasesensitive</key>
-				<true/>
-				<key>matchmode</key>
-				<integer>2</integer>
-				<key>matchstring</key>
-				<string>__ads__ </string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.filter</string>
-			<key>uid</key>
-			<string>427E975F-DF39-4AE1-8C3C-EDE1B694FDCE</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
+				<key>concurrently</key>
 				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
 				<key>escaping</key>
-				<integer>110</integer>
-				<key>keyword</key>
-				<string>ads</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
+				<integer>102</integer>
 				<key>script</key>
-				<string>cat &lt;&lt; EOF
-{
-	"items": [
-		{
-			"title": "Search on the web",
-			"subtitle": "The results will be displayed at ui.adsabs.harvard.edu in your browser",
-			"arg": "__ads__ {query}"
-		},
-		{
-			"title": "Search in Alfred",
-			"subtitle": "The results will be displayed directly in Alfred",
-			"arg": "{query}"
-		}
-	]
-}
-EOF
-</string>
+				<string>$ADS_PYTHON get_bibtex.py '{query}'</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>Search for papers on ADS</string>
 				<key>type</key>
 				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>2469E046-0CF8-40FC-BD78-A8449D453634</string>
+			<string>C9FE6312-3EF6-402F-813D-D055F7F2586E</string>
 			<key>version</key>
-			<integer>3</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>inputstring</key>
-				<string></string>
-				<key>matchcasesensitive</key>
+				<key>autopaste</key>
 				<true/>
-				<key>matchmode</key>
-				<integer>2</integer>
-				<key>matchstring</key>
-				<string>^(?!__ads__.*$).*</string>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.filter</string>
+			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
-			<string>95CBCB6A-2883-442D-8A36-76B0E44B7219</string>
+			<string>9CDCC2C0-8415-4195-966C-8CB12FCD0CFA</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -276,14 +181,14 @@ EOF
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>110</integer>
+				<key>keyword</key>
+				<string>ads</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -314,7 +219,26 @@ EOF
 			<key>uid</key>
 			<string>DAFF399E-22B6-4655-BD72-BD3870F30A91</string>
 			<key>version</key>
-			<integer>3</integer>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://ui.adsabs.harvard.edu/abs/{query}/abstract</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>407E7C1B-5537-436F-8D97-71204E3433D3</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -324,51 +248,44 @@ EOF
 		<key>11D5721D-E45C-4D45-82C8-2CC370002271</key>
 		<dict>
 			<key>xpos</key>
-			<integer>645</integer>
+			<integer>220</integer>
 			<key>ypos</key>
-			<integer>130</integer>
+			<integer>60</integer>
 		</dict>
-		<key>2469E046-0CF8-40FC-BD78-A8449D453634</key>
+		<key>407E7C1B-5537-436F-8D97-71204E3433D3</key>
 		<dict>
 			<key>xpos</key>
-			<integer>35</integer>
+			<integer>290</integer>
 			<key>ypos</key>
-			<integer>130</integer>
+			<integer>410</integer>
 		</dict>
-		<key>427E975F-DF39-4AE1-8C3C-EDE1B694FDCE</key>
+		<key>88F638D8-273F-4E10-979E-6CFBCBC1AD83</key>
 		<dict>
 			<key>xpos</key>
-			<integer>240</integer>
+			<integer>40</integer>
 			<key>ypos</key>
-			<integer>130</integer>
+			<integer>60</integer>
 		</dict>
-		<key>5532B5BB-86D1-4826-BAB2-1D0AB757D978</key>
+		<key>9CDCC2C0-8415-4195-966C-8CB12FCD0CFA</key>
 		<dict>
 			<key>xpos</key>
-			<integer>350</integer>
+			<integer>420</integer>
 			<key>ypos</key>
-			<integer>100</integer>
+			<integer>210</integer>
 		</dict>
-		<key>95CBCB6A-2883-442D-8A36-76B0E44B7219</key>
+		<key>C9FE6312-3EF6-402F-813D-D055F7F2586E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>240</integer>
+			<integer>250</integer>
 			<key>ypos</key>
-			<integer>190</integer>
-		</dict>
-		<key>BB651561-1A0A-42DB-8B5C-A41D5ADA51B6</key>
-		<dict>
-			<key>xpos</key>
-			<integer>435</integer>
-			<key>ypos</key>
-			<integer>65</integer>
+			<integer>210</integer>
 		</dict>
 		<key>DAFF399E-22B6-4655-BD72-BD3870F30A91</key>
 		<dict>
 			<key>xpos</key>
-			<integer>435</integer>
+			<integer>40</integer>
 			<key>ypos</key>
-			<integer>195</integer>
+			<integer>400</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
@@ -376,7 +293,7 @@ EOF
 		<key>ADS_DEV_KEY</key>
 		<string></string>
 		<key>ADS_PYTHON</key>
-		<string>/Users/dforeman/anaconda3/bin/python</string>
+		<string></string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>

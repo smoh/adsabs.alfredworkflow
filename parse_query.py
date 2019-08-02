@@ -44,9 +44,12 @@ def parse_query_string(query):
 
 
 if __name__ == "__main__":
+    import json
     query = " ".join(sys.argv[1:])
     query = parse_query_string(query)
-    if len(query):
-        sys.stdout.write("https://ui.adsabs.harvard.edu/search/q="+query)
-    else:
-        sys.stdout.write("https://ui.adsabs.harvard.edu")
+    results = dict(items=[dict(
+        title="Execute search on ADS website",
+        subtitle=query,
+        arg="https://ui.adsabs.harvard.edu/search/q="+query,
+    )])
+    sys.stdout.write(json.dumps(results))
